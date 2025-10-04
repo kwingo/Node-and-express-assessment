@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const productsRouter = require("./products/products.router");
 
-console.log("Database_URL", process.env.PRODUCTION_DATABASE_URL);
+console.log("DATABASE_URL", process.env.DATABASE_URL);
 
 app.use(express.json());
 app.use("/api/ping", (_request, response, _next) => {
